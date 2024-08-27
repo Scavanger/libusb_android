@@ -1,6 +1,6 @@
 name: libusb_android
 description: "Android Dart wrapper via dart:ffi for https://github.com/libusb/libusb."
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/scavanger/libusb_android
 
 environment:
