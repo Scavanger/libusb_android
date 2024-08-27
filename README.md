@@ -10,7 +10,7 @@ Dart wrapper via `libusb` [https://github.com/woodemi/libusb.dart](https://githu
 > [!IMPORTANT]
 > libusb has the restriction on (unrooted) Android that no USB devices can be listed and found.
 > Functions like `libusb_get_list_devices` will not find any devices. 
-> See [libusb android readme](https://github.com/libusb/libusb/blob/master/android/README)
+See [libusb android readme](https://github.com/libusb/libusb/blob/master/android/README)
 
 The devices must be listed and opened via the native Java/Kotlin API in order to obtain a native handle with which libusb can continue to work. 
 You can use (libusb_android_helper)[https://pub.dev/packages/libusb_android_helper] for this 
