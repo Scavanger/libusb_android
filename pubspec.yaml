@@ -1,0 +1,25 @@
+name: libusb_android
+description: "Android Dart wrapper via dart:ffi for https://github.com/libusb/libusb."
+version: 1.0.0
+repository: https://github.com/scavanger/libusb_android
+publish_to: 'none'
+
+environment:
+  sdk: ^3.5.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  ffi: ^2.1.0
+  ffigen: ^11.0.0
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        ffiPlugin: true

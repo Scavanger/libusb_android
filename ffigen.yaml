@@ -1,0 +1,25 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: LibusbAndroidBindings
+description:  Bindings for `src/libusb/libusb.h`.
+output: 'lib/libusb_android_bindings.dart'
+headers:
+  entry-points:
+    - 'src/libusb/libusb/libusb.h'
+  include-directives:
+    - '**libusb.h'
+library-imports:
+    pkg_libusb: 'libusb_base.dart'
+type-map:
+    'typedefs':
+      'ssize_t':
+        'lib': 'pkg_libusb'
+        'c-type': 'Ssize'
+        'dart-type': 'int'
+    'structs':
+      'timeval':
+        'lib': 'pkg_libusb'
+        'c-type': 'Timeval'
+        'dart-type': 'Timeval'
+comments:
+  style: any
+  length: full

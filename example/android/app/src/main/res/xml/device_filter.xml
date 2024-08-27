@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Allow all devices in this exmaple -->
+    <usb-device />
+</resources>

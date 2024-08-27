@@ -1,0 +1,33 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Validation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Clone repository
+       uses: actions/checkout@v4
+     - name: Set up Flutter
+       uses: subosito/flutter-action@v2
+       with:
+         channel: stable
+     - name: Install depencis
+       run: flutter pub get
+     - name: Build APK
+       working-directory: ./example
+       run: flutter build apk
+     - name: Build appbundle
+       working-directory: ./example
+       run: flutter build appbundle
