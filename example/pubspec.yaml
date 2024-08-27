@@ -1,6 +1,7 @@
 name: libusb_android_example
 description: "Demonstrates how to use the libusb_android plugin."
 version: 1.0.0
+publish_to: 'none'
 
 environment:
   sdk: ^3.5.0
