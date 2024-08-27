@@ -16,3 +16,4 @@ jobs:
       with:
         submodules: recursive
     - uses: ./.github/actions/publish_flutter_package
+
