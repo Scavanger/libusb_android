@@ -1,4 +1,4 @@
-![Push Validation](https://github.com/scavanger/libusb_android/actions/workflows/dart.yml/badge.svg?event=push)
+![Push Validation](https://github.com/scavanger/libusb_android/actions/workflows/dart.yml/badge.svg)
 # Libusb android
 
 A ffi wrapper around `libusb` for Android.
