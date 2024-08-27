@@ -31,3 +31,4 @@ jobs:
      - name: Build appbundle
        working-directory: ./example
        run: flutter build appbundle
+       
